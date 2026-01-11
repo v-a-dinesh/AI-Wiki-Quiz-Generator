@@ -1,6 +1,13 @@
-# AI Wiki Quiz Generator - DeepKlarity Technologies
+# AI Wiki Quiz Generator
 
 An intelligent web application that automatically generates interactive quizzes from Wikipedia articles using Google Gemini AI. Built with FastAPI, React, and PostgreSQL.
+
+## Live Application
+
+- **Frontend**: https://ai-wiki-quiz-generator-xi.vercel.app
+- **Backend API**: https://ai-wiki-quiz-generator-tmx7.onrender.com
+- **API Documentation**: https://ai-wiki-quiz-generator-tmx7.onrender.com/docs
+- **GitHub Repository**: https://github.com/v-a-dinesh/AI-Wiki-Quiz-Generator
 
 ![Tech Stack](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
@@ -18,8 +25,7 @@ An intelligent web application that automatically generates interactive quizzes 
 - [API Documentation](#api-documentation)
 - [Testing](#testing)
 - [Deployment](#deployment)
-- [Screenshots](#screenshots)
-- [Submission Details](#submission-details)
+- [Developer](#developer)
 
 ## Features
 
@@ -398,40 +404,7 @@ Expected output format is shown in `sample_data/sample_output_alan_turing.json`
 2. Copy connection string from Settings > Database
 3. Update `DATABASE_URL` in backend environment variables
 
-## Screenshots
-
-### Tab 1: Generate Quiz
-![Generate Quiz](screenshots/generate_quiz.png)
-- URL input with validation
-- Quiz display with questions, options, and explanations
-- Section-wise grouping
-- Related topics suggestions
-
-### Tab 2: Past Quizzes
-![Quiz History](screenshots/quiz_history.png)
-- Table of all generated quizzes
-- Details modal with full quiz view
-
-### Take Quiz Mode
-![Take Quiz](screenshots/take_quiz.png)
-- Interactive quiz interface
-- Score calculation
-- Answer review
-
-## Submission Details
-
-### GitHub Repository
-https://github.com/your-username/deepklarity-wiki-quiz
-
-### Deployed Application
-- **Frontend**: https://deepklarity-wiki-quiz.vercel.app
-- **Backend API**: https://deepklarity-api.onrender.com
-- **API Docs**: https://deepklarity-api.onrender.com/docs
-
-### Screen Recording
-https://drive.google.com/file/d/your-recording-id/view
-
-### Key Highlights
+## Key Features
 
 1. **Prompt Engineering**: Custom prompts for quiz generation with grounding in article content
 2. **Quiz Quality**: 8 questions with varying difficulty, factual accuracy, and clear explanations
@@ -472,14 +445,17 @@ https://drive.google.com/file/d/your-recording-id/view
 - [x] GitHub repository
 - [x] Screen recording
 
+## Developer
+
+**Developed by**: DINESH V A
+
+- **Email**: dineshva2004@gmail.com
+- **Portfolio**: https://dineshva.vercel.app
+- **GitHub**: https://github.com/v-a-dinesh
+
 ## License
 
 This project is developed for DeepKlarity Technologies.
 
-## Contact
 
-For questions or support, please contact DeepKlarity Technologies.
 
----
-
-Built with care by DeepKlarity Technologies

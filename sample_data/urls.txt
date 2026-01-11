@@ -1,0 +1,32 @@
+Sample Wikipedia URLs for Testing
+===================================
+
+1. Alan Turing
+   https://en.wikipedia.org/wiki/Alan_Turing
+   
+2. Artificial Intelligence
+   https://en.wikipedia.org/wiki/Artificial_intelligence
+   
+3. Marie Curie
+   https://en.wikipedia.org/wiki/Marie_Curie
+   
+4. World War II
+   https://en.wikipedia.org/wiki/World_War_II
+   
+5. Python (Programming Language)
+   https://en.wikipedia.org/wiki/Python_(programming_language)
+   
+6. Albert Einstein
+   https://en.wikipedia.org/wiki/Albert_Einstein
+   
+7. Climate Change
+   https://en.wikipedia.org/wiki/Climate_change
+   
+8. Renaissance
+   https://en.wikipedia.org/wiki/Renaissance
+   
+9. Quantum Computing
+   https://en.wikipedia.org/wiki/Quantum_computing
+   
+10. Leonardo da Vinci
+    https://en.wikipedia.org/wiki/Leonardo_da_Vinci

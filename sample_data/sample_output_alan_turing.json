@@ -1,0 +1,157 @@
+{
+  "id": 1,
+  "url": "https://en.wikipedia.org/wiki/Alan_Turing",
+  "title": "Alan Turing",
+  "summary": "Alan Mathison Turing OBE FRS was an English mathematician, computer scientist, logician, cryptanalyst, philosopher and theoretical biologist. Turing was highly influential in the development of theoretical computer science, providing a formalisation of the concepts of algorithm and computation with the Turing machine, which can be considered a model of a general-purpose computer. He is widely considered to be the father of theoretical computer science and artificial intelligence.",
+  "key_entities": {
+    "people": [
+      "Alan Turing",
+      "Alonzo Church",
+      "John von Neumann",
+      "Christopher Morcom",
+      "Joan Clarke"
+    ],
+    "organizations": [
+      "University of Cambridge",
+      "Princeton University",
+      "Bletchley Park",
+      "Government Code and Cypher School",
+      "National Physical Laboratory"
+    ],
+    "locations": [
+      "United Kingdom",
+      "London",
+      "Manchester",
+      "Bletchley"
+    ]
+  },
+  "sections": [
+    "Early life and education",
+    "Career and research",
+    "Cryptanalysis",
+    "World War II",
+    "Bombe",
+    "Pattern recognition and mathematical biology",
+    "Persecution for homosexuality",
+    "Death",
+    "Recognition and tributes",
+    "Legacy"
+  ],
+  "quiz": [
+    {
+      "question": "Where did Alan Turing receive his undergraduate education?",
+      "options": [
+        "Harvard University",
+        "University of Cambridge",
+        "Oxford University",
+        "Princeton University"
+      ],
+      "answer": "University of Cambridge",
+      "difficulty": "easy",
+      "explanation": "Turing studied at King's College, Cambridge, as mentioned in the 'Early life and education' section.",
+      "section_reference": "Early life and education"
+    },
+    {
+      "question": "What was Alan Turing's main contribution during World War II?",
+      "options": [
+        "Developing atomic weapons",
+        "Breaking the Enigma code",
+        "Inventing radar technology",
+        "Designing fighter aircraft"
+      ],
+      "answer": "Breaking the Enigma code",
+      "difficulty": "medium",
+      "explanation": "Turing played a crucial role in breaking German ciphers, particularly the Enigma machine, at Bletchley Park during WWII.",
+      "section_reference": "World War II"
+    },
+    {
+      "question": "What machine did Turing design to help decrypt German messages?",
+      "options": [
+        "The Colossus",
+        "The Bombe",
+        "The ENIAC",
+        "The Difference Engine"
+      ],
+      "answer": "The Bombe",
+      "difficulty": "medium",
+      "explanation": "Turing designed the electromechanical machine called the Bombe to help decrypt Enigma-encrypted messages.",
+      "section_reference": "Bombe"
+    },
+    {
+      "question": "What test did Turing propose to determine machine intelligence?",
+      "options": [
+        "The Intelligence Quotient Test",
+        "The Turing Test",
+        "The Logic Test",
+        "The Computation Test"
+      ],
+      "answer": "The Turing Test",
+      "difficulty": "easy",
+      "explanation": "The Turing Test, proposed by Alan Turing, is a test of a machine's ability to exhibit intelligent behavior equivalent to a human.",
+      "section_reference": "Career and research"
+    },
+    {
+      "question": "What was the cause of Alan Turing's persecution in the 1950s?",
+      "options": [
+        "Espionage charges",
+        "His homosexuality",
+        "Political activism",
+        "Religious beliefs"
+      ],
+      "answer": "His homosexuality",
+      "difficulty": "medium",
+      "explanation": "Turing was prosecuted for homosexual acts, which were illegal in the UK at the time, as detailed in the 'Persecution for homosexuality' section.",
+      "section_reference": "Persecution for homosexuality"
+    },
+    {
+      "question": "In what year did Alan Turing die?",
+      "options": [
+        "1952",
+        "1954",
+        "1956",
+        "1958"
+      ],
+      "answer": "1954",
+      "difficulty": "hard",
+      "explanation": "Alan Turing died on 7 June 1954, as mentioned in the 'Death' section.",
+      "section_reference": "Death"
+    },
+    {
+      "question": "What honor was Turing awarded in 2013, nearly 60 years after his death?",
+      "options": [
+        "Knighthood",
+        "Royal pardon",
+        "Nobel Prize",
+        "Presidential Medal"
+      ],
+      "answer": "Royal pardon",
+      "difficulty": "hard",
+      "explanation": "Queen Elizabeth II granted Turing a posthumous royal pardon in 2013 for his conviction.",
+      "section_reference": "Recognition and tributes"
+    },
+    {
+      "question": "What field of study did Turing contribute to with his work on morphogenesis?",
+      "options": [
+        "Quantum physics",
+        "Mathematical biology",
+        "Organic chemistry",
+        "Geology"
+      ],
+      "answer": "Mathematical biology",
+      "difficulty": "hard",
+      "explanation": "Turing's work on morphogenesis and pattern formation contributed to the field of mathematical biology.",
+      "section_reference": "Pattern recognition and mathematical biology"
+    }
+  ],
+  "related_topics": [
+    "Cryptography",
+    "Enigma machine",
+    "Computer science history",
+    "Artificial intelligence",
+    "Bletchley Park",
+    "Turing machine",
+    "Church-Turing thesis",
+    "History of computing"
+  ],
+  "created_at": "2026-01-11T14:30:00Z"
+}

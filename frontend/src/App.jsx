@@ -11,7 +11,10 @@ function App() {
       <header className="bg-white/80 backdrop-blur-md shadow-sm border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-4">
+            <div 
+              className="flex items-center space-x-4 cursor-pointer"
+              onClick={() => setActiveTab('generate')}
+            >
               <img 
                 src="https://deepklarity.ai/images/logo.png" 
                 alt="DeepKlarity" 

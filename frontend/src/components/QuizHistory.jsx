@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
-import { Calendar, FileText, Loader2, X, ExternalLink } from 'lucide-react';
+import { Calendar, FileText, Loader2, X, ExternalLink, Play } from 'lucide-react';
 import { quizAPI } from '../services/api';
 import QuizDisplay from './QuizDisplay';
+import TakeQuizMode from './TakeQuizMode';
 
 function QuizHistory() {
   const [history, setHistory] = useState([]);
@@ -9,6 +10,7 @@ function QuizHistory() {
   const [selectedQuiz, setSelectedQuiz] = useState(null);
   const [loadingQuiz, setLoadingQuiz] = useState(false);
   const [error, setError] = useState(null);
+  const [mode, setMode] = useState('view');
 
   useEffect(() => {
     fetchHistory();
@@ -28,14 +30,14 @@ function QuizHistory() {
   };
 
   const handleViewDetails = async (quizId) => {
-    setLoadingQuiz(true);
+    setLoadingQuiz(quizId);
     try {
       const quiz = await quizAPI.getQuizById(quizId);
       setSelectedQuiz(quiz);
     } catch (err) {
       setError('Failed to load quiz details');
     } finally {
-      setLoadingQuiz(false);
+      setLoadingQuiz(null);
     }
   };
 
@@ -141,9 +143,9 @@ function QuizHistory() {
                       <button
                         onClick={() => handleViewDetails(item.id)}
                         className="btn-primary text-sm"
-                        disabled={loadingQuiz}
+                        disabled={loadingQuiz === item.id}
                       >
-                        {loadingQuiz ? (
+                        {loadingQuiz === item.id ? (
                           <Loader2 className="w-4 h-4 animate-spin" />
                         ) : (
                           'View Details'
@@ -158,14 +160,48 @@ function QuizHistory() {
         </div>
       ) : (
         <div>
-          <button
-            onClick={() => setSelectedQuiz(null)}
-            className="btn-secondary mb-6 flex items-center space-x-2"
-          >
-            <X className="w-4 h-4" />
-            <span>Close Details</span>
-          </button>
-          <QuizDisplay quiz={selectedQuiz} />
+          <div className="flex items-center justify-between mb-6">
+            <button
+              onClick={() => {
+                setSelectedQuiz(null);
+                setMode('view');
+              }}
+              className="btn-secondary flex items-center space-x-2"
+            >
+              <X className="w-4 h-4" />
+              <span>Close Details</span>
+            </button>
+            
+            <div className="flex items-center space-x-3">
+              <button
+                onClick={() => setMode('view')}
+                className={`px-4 py-2 rounded-lg font-semibold transition-all ${
+                  mode === 'view'
+                    ? 'bg-purple-600 text-white shadow-lg'
+                    : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-300'
+                }`}
+              >
+                View Quiz
+              </button>
+              <button
+                onClick={() => setMode('take')}
+                className={`px-4 py-2 rounded-lg font-semibold transition-all flex items-center space-x-2 ${
+                  mode === 'take'
+                    ? 'bg-purple-600 text-white shadow-lg'
+                    : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-300'
+                }`}
+              >
+                <Play className="w-4 h-4" />
+                <span>Take Quiz</span>
+              </button>
+            </div>
+          </div>
+          
+          {mode === 'view' ? (
+            <QuizDisplay quiz={selectedQuiz} />
+          ) : (
+            <TakeQuizMode quiz={selectedQuiz} />
+          )}
         </div>
       )}
     </div>
